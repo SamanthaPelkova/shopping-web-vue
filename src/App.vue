@@ -11,7 +11,7 @@
           class="product-item"
           @add-to-basket="addToBasket(product, $event)"
       />
-      <note-to-buy class="notesBlock"></note-to-buy>
+      <note-to-buy class="notesBlock"/>
     </div>
   </div>
 </template>
