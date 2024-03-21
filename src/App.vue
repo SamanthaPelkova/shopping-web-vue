@@ -2,7 +2,7 @@
   <div class="app">
     <h1 class="header">Malý e-shop</h1>
     <message-bar class="message" :cart-items="cartItems" :basket-messages="basketMessages" />
-    <cart-items class="basket" :cart-items="cartItems" @remove-item="removeFromBasket"/>
+    <cart-items class="basket" :cart-items="cartItems" @remove-item="removeFromBasket" />
     <div class="products">
       <product-item
           v-for="product in products"
@@ -17,19 +17,19 @@
 </template>
 
 <script>
-import {ref} from 'vue';
-import ProductItem from './components/ProductItem.vue';
-import CartItems from './components/CartItems.vue';
-import NoteToBuy from "@/components/NoteToBuy.vue";
-import MessageBar from "@/components/MessageBar.vue";
-import image1 from './images/modry-kabatek.webp';
-import image2 from './images/orandzovy-kabatek.webp';
-import image3 from './images/bily-kabatek.webp';
-import image4 from './images/bezove-saty.webp';
-import image5 from './images/modre saty.webp';
-import image6 from './images/pomerancove saty.webp';
-import image7 from './images/zelene saty.webp';
-import image8 from './images/zlute saty.webp';
+import {ref} from 'vue'
+import ProductItem from './components/ProductItem.vue'
+import CartItems from './components/CartItems.vue'
+import NoteToBuy from "@/components/NoteToBuy.vue"
+import MessageBar from "@/components/MessageBar.vue"
+import image1 from './images/modry-kabatek.webp'
+import image2 from './images/orandzovy-kabatek.webp'
+import image3 from './images/bily-kabatek.webp'
+import image4 from './images/bezove-saty.webp'
+import image5 from './images/modre saty.webp'
+import image6 from './images/pomerancove saty.webp'
+import image7 from './images/zelene saty.webp'
+import image8 from './images/zlute saty.webp'
 
 export default {
   components: {
